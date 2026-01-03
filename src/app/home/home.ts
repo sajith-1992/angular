@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { Greeting } from '../components/greeting/greeting';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [Greeting],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
 export class Home {
+  message=signal("hi this is from home component to greting");
 
 }

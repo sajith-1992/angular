@@ -10,10 +10,12 @@ imports: [RouterOutlet,Home,Header
   ],
   template: `
   <app-header/>
-   <app-home/>
+  <main> 
+  <app-home/>
+  </main> 
   `,
   styles: [`
-    p{background-color:red}`],
+    main{padding:16px}`],
 })
 export class App {
   protected readonly title = signal('first-ng-app');
