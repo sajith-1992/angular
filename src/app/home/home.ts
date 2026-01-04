@@ -9,5 +9,6 @@ import { Greeting } from '../components/greeting/greeting';
 })
 export class Home {
   message=signal("hi this is from home component to greting");
-
-}
+keyUpHandler(event:KeyboardEvent){
+  console.log(`key up ${event.key} event`);
+}}
